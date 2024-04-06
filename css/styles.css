@@ -37,12 +37,16 @@ address {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -156,32 +160,49 @@ img {
 /*=============== section 1 ===============*/
 
 .solution {
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 72px 0;
   /* background-color: #2e2f42; */
-  max-width: 1440px;
-  height: 600px;
+  /* max-width: 1440px; */
+  width: 320px;
+  /* height: 600px; */
+  height: 432px;
   /* background: rgba(46, 47, 66, 0.7); */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/main-back.jpg);
+    url(../images/Dark-bg-mob.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+@media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .solution {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-mob2x.jpg);
+  }
+}
+
 .solution-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px; */
+  font-size: 36px;
+  /* line-height: 1.07; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  max-width: 496px;
-  margin-bottom: 48px;
+  /* max-width: 496px; */
+  max-width: 216px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
 }
 
 .solution-btn {
@@ -209,8 +230,10 @@ img {
 /*=============== section 2 ===============*/
 
 .about {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  /* padding-bottom: 120px;
+  padding-top: 120px; */
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .visually-hidden {
@@ -228,11 +251,14 @@ img {
 
 .about-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap:72px;
 }
 
 .about-list-item {
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
+  width: 100%;
 }
 
 .about-icon-back {
@@ -255,15 +281,20 @@ img {
 }
 
 .about-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  /* font-weight: 500; */
+  font-weight: 700px;
+  /* font-size: 20px; */
+  font-size: 36px;
+  /* line-height: 1.2; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .about-list-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -274,8 +305,10 @@ img {
 
 .team {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  /* padding-bottom: 120px;
+  padding-top: 120px; */
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .team-title {
@@ -291,13 +324,16 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* gap: 24px; */
+  gap: 72px;
 }
 
 .team-list-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 24px * 3) / 4);
+  /* width: calc((100% - 24px * 3) / 4); */
+  width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -307,6 +343,7 @@ img {
 
 .team-container {
   padding: 32px 0;
+  
 }
 
 .team-list-subtitle {
@@ -369,8 +406,10 @@ img {
 /*=============== section 4 ===============*/
 
 .portfolio {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  /* padding-bottom: 120px;
+  padding-top: 120px; */
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .portfolio-title {
@@ -387,13 +426,13 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  /* column-gap: 24px; */
   row-gap: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item {
-  width: calc((100% - 24px * 2) / 3);
+  /* width: calc((100% - 24px * 2) / 3); */
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -854,6 +893,160 @@ margin-bottom: 4px;
 }
 
 
+/* =============== Медіа =============== */
+
+@media screen and (min-width: 320px) {
+
+  .about-icon-back{
+    display: none;
+  }
+
+  }
+
+
+  @media screen and (min-width: 768px){
+    .container {
+      width: 768px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .solution{
+      padding: 112px 0;
+      width: 768px;
+      height: 436px;
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg-tab.jpg);
+    }
+
+    @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .solution {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tab2x.jpg);
+      }
+    }
+
+    .solution-title {
+      font-size: 56px;
+      line-height: 1.07;
+      max-width: 496px;
+      margin-bottom: 36px;
+    }
+
+    .team .container {
+      width: 584px;
+    }
+
+    .about-list {
+      gap: 72px 24px;
+    }
+
+    .team-list {
+      gap: 64px 24px;
+    }
+
+    .portfolio-list {
+      gap: 72px 24px;
+    }
+    
+    .about-list-item {
+      width: calc((100% - 24px) / 2);
+    }
+
+    .about-list-title {
+      text-align: left;
+    }
+
+    .team-list-item {
+      width: calc(100% - 24px) / 2;
+    }
+
+    .portfolio-list-item {
+      width: calc((100% - 24px) / 2);
+    }
+
+    .footer .container {
+      width: 584px;
+    }
+
+  }
+
+  @media screen and (min-width: 1158px){
+
+    .container {
+      width: 1158px;
+    }
+    .solution{
+      padding: 188px 0;
+      width: 1440px;
+      height: 600px;
+      background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-back.jpg);
+    }
+
+    @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .solution {
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/main-back2x.jpg);
+      }
+    }
+
+    .solution-title {
+      margin-bottom: 48px;
+    }
+
+    .team .container {
+      width: 1158px;
+    }
+
+    .about-icon-back{
+      display: flex;
+    }
+
+    .about-list {
+      display: flex;
+      flex-wrap:nowrap;
+      gap: 24px;
+    }
+
+    .portfolio-list {
+      gap: 48px 24px;
+    }
+
+    .about-list-text {
+      font-weight: 400;
+    }
+
+    .about-list-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .about-list-item {
+      width: calc((100% - 3 * 24px) / 4);
+    }
+
+    .team-list-item {
+      width: calc((100% - 24px * 3) / 4);
+    }
+
+    .portfolio-list-item {
+      width: calc((100% - 24px * 2) / 3);
+    }
+  }
 
 
 
@@ -866,9 +1059,25 @@ margin-bottom: 4px;
 
 
 
+/* =============== приклад =============== */
 
+/* <picture>
 
+  <source media="(min-width: 1158px)"
 
+  srcset="./images/portfolio/dac/imgimgimgbank-dac@1x.jpg 1x, ./images/portfolio/dac/imgimgimgbank-dac@2x.jpg 2x" />
+
+  <source media="(min-width: 768px)"
+
+  srcset="./images/portfolio/tablet/imgimgbank-tab@1x.jpg 1x, ./images/portfolio/tablet/imgimgbank-tab@2x.jpg 2x" />
+
+  <source media="(min-width: 320px)"
+
+  srcset="./images/portfolio/mob/imgbank-mob@1x.jpg 1x, ./images/portfolio/mob/imgbank-mob@2x.jpg 2x" />
+
+  <img src="./images/portfolio/mob/imgbank-mob@1x.jpg" alt="bank" class="" />
+
+</picture> */
 
 
 
@@ -884,39 +1093,3 @@ margin-bottom: 4px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
-@media screen and (min-width: 768px) {
-.container {
-  max-width: 768px;
-}
-}
-
-@media screen and (min-width: 1158px) {
-.container {
-  max-width: 1158px;
-}
-
-} */
-
-
-/* ================================================= MOBILE  ========================================= */
-
-/* @media screen and (max-width: 767px) {
-
-  мої стилі сюди !!!
- 
- } */
- 
- /* ================================================= TABLET  ========================================= */
- 
- /* @media screen and (min-width: 768px) {
- 
-  мої стилі сюди!!!
- 
- } */
- 
-  /* ================================================= DESKTOP  ========================================= */ */
- 
- /* @media screen and (min-width: 1158px) {
- 
- }  */
