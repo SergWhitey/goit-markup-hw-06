@@ -715,7 +715,7 @@ gap: 16px;
 
 .footer-form {
   /* display: flex; */
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .footer-label {
@@ -1036,7 +1036,11 @@ margin-bottom: 4px;
 
   @media screen and (min-width: 768px){
     .header-nav {
-      margin-right: 120px;
+      margin-right: 100px;
+    }
+
+    .icon-menu {
+      display: none;
     }
 
     .header-logo-blue {
@@ -1099,6 +1103,7 @@ margin-bottom: 4px;
 
     .about-list {
       gap: 72px 24px;
+      justify-content: center;
     }
 
     .team-list {
@@ -1131,6 +1136,10 @@ margin-bottom: 4px;
       width: calc((100% - 24px) / 2);
     }
 
+    .footer {
+      padding: 0;
+    }
+
     .foot-container {
       display: flex;
     }
@@ -1140,7 +1149,7 @@ margin-bottom: 4px;
     }
 
     .footer-text {
-      max-width: 264px;
+      min-width: 264px;
     }
 
     .footer-items-flex {
@@ -1256,6 +1265,10 @@ margin-bottom: 4px;
       width: calc((100% - 24px * 2) / 3);
     }
 
+    .footer {
+      padding: 100px 0 100px 0;
+    }
+
     .footer-subscribe {
       margin-left: 80px;
       /* display: flex; */
@@ -1269,6 +1282,15 @@ margin-bottom: 4px;
     .footer-form {
       display: flex;
       gap: 24px;
+    }
+
+    .footer-text {
+      max-width: 264px;
+      margin-right: 120px;
+    }
+
+    .footer-label {
+      margin-right: 0;
     }
   }
 
