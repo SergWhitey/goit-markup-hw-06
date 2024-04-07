@@ -211,6 +211,9 @@ stroke: rgba(0, 0, 0, 0.1);
 }
 
 .mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .mob-menu-item {
@@ -230,6 +233,9 @@ color: #404bbf;
 }
 
 .mob-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   margin-bottom: 48px;
 }
 
