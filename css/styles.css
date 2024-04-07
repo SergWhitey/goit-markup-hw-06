@@ -285,9 +285,9 @@ color: #434455;
   padding: 72px 0;
   /* background-color: #2e2f42; */
   /* max-width: 1440px; */
-  width: 320px;
+  /* width: 320px; */
   /* height: 600px; */
-  height: 432px;
+  /* height: 432px; */
   /* background: rgba(46, 47, 66, 0.7); */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -656,7 +656,7 @@ color: #434455;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  margin-top: 72px;
+  /* margin-top: 72px; */
 }
 
 .footer-icon {
@@ -739,12 +739,13 @@ width: 264px;
 height: 40px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 padding-left: 16px;
-margin-right: 24px;
+/* margin-right: 24px; */
 background-color: transparent;
 font-size: 12px;
 line-height: 2;
 letter-spacing: 0.04em;
 color: #ffffff;
+margin-bottom: 16px;
 }
 
 .footer-input::placeholder {
@@ -769,7 +770,6 @@ cursor: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 16px;
 }
 
 .btn-subscribe:hover {
@@ -1118,7 +1118,7 @@ margin-bottom: 4px;
     }
 
     .team-list-item {
-      width: calc(100% - 24px) / 2;
+      width: calc((100% - 24px) / 2);
     }
 
     .portfolio-list-item {
@@ -1131,6 +1131,40 @@ margin-bottom: 4px;
 
     .footer .container {
       /* width: 584px; */
+    }
+
+    .footer-text {
+      max-width: 264px;
+    }
+
+    .footer-items-flex {
+      display: flex;
+    }
+
+    .footer-form {
+      display: flex;
+    }
+
+    .foot-container {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .footer-label {
+    margin-right: 24px;
+    }
+
+    .foot-logo-container {
+      margin-right: 24px;
+    }
+
+    .footer-subscribe {
+
+    }
+
+    .foot-container {
+      padding: 84px 164px 108px 108px;
     }
 
     .modal {
@@ -1214,6 +1248,21 @@ margin-bottom: 4px;
 
     .portfolio-list-item {
       width: calc((100% - 24px * 2) / 3);
+    }
+
+    .footer-subscribe {
+      margin-left: 80px;
+      display: flex;
+    }
+
+    .foot-container {
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
+    .footer-form {
+      display: flex;
+      gap: 24px;
     }
   }
 
