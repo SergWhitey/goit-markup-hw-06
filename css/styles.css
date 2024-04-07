@@ -715,6 +715,7 @@ color: #434455;
 
 .footer-subscribe {
 /* margin-left: 80px; */
+/* gap: 24px; */
 margin: 0 auto;
 gap: 16px;
 }
